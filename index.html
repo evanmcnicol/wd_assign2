@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PixelPlate. Discover and reserve game-themed restaurants.">
+    <meta name="author" content="Evan McNicol">
+    <title>PixelPlate — Where Gaming Meets Dining</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="site-header">
+        <a href="index.html" class="logo"><span class="site-name">PixelPlate</span></a>
+        <button class="menu-toggle" type="button">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="site-nav" id="primary-navigation">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="recommend.html">Recommendations</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li class="mobile-only"><a href="reservation.html">Reservation</a></li>
+            </ul>
+        </nav>
+        <a href="reservation.html" class="btn btn-primary">Reservation</a>
+    </header>
+    <!-- main content -->
+    <main>
+        <!-- hero -->
+        <section class="hero">
+            <div class="hero-panels">
+                <img src="images/hero1.png" alt="The Mushroom Kingdom with Princess Peach Castle in the distance from SMO">
+                <img src="images/hero2.png" alt="Hyrule Field at sunset with Hyrule Castle on the horizon from BOTW">
+                <img src="images/hero3.png" alt="The Sector 7 slums by night with the Seventh Heaven bar in the distance from FF7R">
+            </div>
+            <!-- hero -->
+            <div class="hero-content">
+                <h1>Where gaming meets dining.</h1>
+                <p class="lead">A restaurant discovery and reservation platform built around the worlds you love. From
+                    Princess Peach's castle to a back booth in Seventh Heaven, find the perfect table.</p>
+                <div class="hero-ctas">
+                    <a href="reservation.html" class="btn btn-primary">Reserve a table</a>
+                    <a href="restaurants.html" class="btn btn-ghost">Browse restaurants</a>
+                </div>
+            </div>
+        </section>
+        <!-- features section -->
+        <section class="features">
+            <h2>About PixelPlate</h2>
+            <article class="feature">
+                <h3 class="feature-eyebrow">Our purpose</h3>
+                <p>PixelPlate exists to bring game worlds to life at the dinner table. Every restaurant is designed as a
+                    themed experience.</p>
+            </article>
+            <article class="feature">
+                <h3 class="feature-eyebrow">Who it's for</h3>
+                <ul class="audience-list">
+                    <li><strong>Families</strong> looking for a fun, memorable night out.</li>
+                    <li><strong>Couples</strong> wanting a themed date around a shared favourite.</li>
+                    <li><strong>Fans</strong> visiting iconic locations from their favourite games.</li>
+                </ul>
+            </article>
+            <article class="feature">
+                <h3 class="feature-eyebrow">What we offer</h3>
+                <div class="offers">
+                    <div class="offer">
+                        <img src="images/icons/search_icon.svg" alt="">
+                        <div>
+                            <strong>Restaurant Discovery</strong>
+                            <span>Browse game-themed venues, filter by world, cuisine and price.</span>
+                        </div>
+                    </div>
+                    <div class="offer">
+                        <img src="images/icons/star_icon.svg" alt="">
+                        <div>
+                            <strong>Smart Recommendations</strong>
+                            <span>Answer a few questions, get personalised restaurant matches.</span>
+                        </div>
+                    </div>
+                    <div class="offer">
+                        <img src="images/icons/calendar_icon.svg" alt="">
+                        <div>
+                            <strong>Easy Reservations</strong>
+                            <span>Secure bookings with a transparent deposit &mdash; no surprises.</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- restaurant cards -->
+        <section class="restaurants">
+            <div class="restaurants-head">
+                <div>
+                    <h2>Featured restaurants</h2>
+                    <p class="lead">A preview of available venues. The full lineup can be found on the Restaurants page.
+                    </p>
+                </div>
+                <a href="restaurants.html">View all restaurants &rarr;</a>
+            </div>
+            <div class="restaurant-grid">
+                <article class="restaurant-card">
+                    <div class="card-image">
+                        <img src="images/restaurants/peachs-castle.png" alt="Interior image of Princess Peach's Castle Catering">
+                    </div>
+                    <div class="card-body">
+                        <h3>Princess Peach's Castle Catering</h3>
+                        <p class="card-meta">Royal European &nbsp;&middot;&nbsp; <span class="price">$$$</span>
+                            &nbsp;&middot;&nbsp; Fine Dining</p>
+                        <p>Elegant multi-course meals served beneath stained glass &mdash; house-made pasta, slow
+                            roasts, and the famous mushroom risotto.</p>
+                        <div class="card-foot">
+                            <a href="reservation.html?restaurant=peach" class="btn btn-ghost">Reserve &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="restaurant-card">
+                    <div class="card-image">
+                        <img src="images/restaurants/lonlon.png" alt="Interior image of Lon Lon House Ranch">
+                    </div>
+                    <div class="card-body">
+                        <h3>Lon Lon Ranch House</h3>
+                        <p class="card-meta">Country &nbsp;&middot;&nbsp; <span class="price">$$</span>
+                            &nbsp;&middot;&nbsp; Family Friendly</p>
+                        <p>Farm ingredients and hearty country meals served in a cosy ranch retreat. Try the slow-cooked
+                            roast and the Lon Lon milk bread.</p>
+                        <div class="card-foot">
+                            <a href="reservation.html?restaurant=lonlon" class="btn btn-ghost">Reserve &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="restaurant-card">
+                    <div class="card-image">
+                        <img src="images/restaurants/seventh-heaven.png" alt="Interior image of Seventh Heaven Bar">
+                    </div>
+                    <div class="card-body">
+                        <h3>Seventh Heaven Bar</h3>
+                        <p class="card-meta">Cocktail Lounge &nbsp;&middot;&nbsp; <span class="price">$$$</span>
+                            &nbsp;&middot;&nbsp; Rooftop Lounge</p>
+                        <p>Neon, smoke and handcrafted cocktails. Smoked sliders, fusion plates, and the city's best
+                            playlist after eleven.</p>
+                        <div class="card-foot">
+                            <a href="reservation.html?restaurant=seventh" class="btn btn-ghost">Reserve &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="site-footer">
+        <small class="copyright">&copy; 2026 PixelPlate</small>
+        <span class="credit">A web development project for Swinburne University of Technology.</span>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

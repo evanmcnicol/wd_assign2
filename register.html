@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PixelPlate. Discover and reserve game-themed restaurants.">
+    <meta name="author" content="Evan McNicol">
+    <title>PixelPlate — Where Gaming Meets Dining</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="site-header">
+        <a href="index.html" class="logo"><span class="site-name">PixelPlate</span></a>
+        <button class="menu-toggle" type="button">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="site-nav" id="primary-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="recommend.html">Recommendations</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li class="mobile-only"><a href="reservation.html">Reservation</a></li>
+            </ul>
+        </nav>
+        <a href="reservation.html" class="btn btn-primary">Reservation</a>
+    </header>
+    <!-- main form content -->
+    <main class="form-page">
+        <section>
+            <h1>Register an account</h1>
+            <form action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php" method="post" novalidate>
+                <p>
+                    <label for="username">Username *</label>
+                    <input type="text" id="username" name="username" required="required">
+                </p>
+
+                <p>
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required="required">
+                </p>
+
+                <p>
+                    <label for="password">Password *</label>
+                    <input type="password" id="password" name="password" required="required">
+                </p>
+
+                <p>
+                    <label for="confirmPassword">Confirm Password *</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required="required">
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required="required">
+                </p>
+
+                <p>
+                    <label>Gender *</label>
+
+                    <label class="radio-option" for="genderMale">
+                        <input type="radio" id="genderMale" name="gender" value="male">
+                        <span>Male</span>
+                    </label>
+
+                    <label class="radio-option" for="genderFemale">
+                        <input type="radio" id="genderFemale" name="gender" value="female">
+                        <span>Female</span>
+                    </label>
+
+                    <label class="radio-option" for="genderOther">
+                        <input type="radio" id="genderOther" name="gender" value="other">
+                        <span>Other</span>
+                    </label>
+
+                    <label class="radio-option" for="genderPreferNot">
+                        <input type="radio" id="genderPreferNot" name="gender" value="preferNot">
+                        <span>Prefer not to say</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label for="dietPreferences">Dietary Preferences *</label><br>
+                    <select id="dietPreferences" name="dietPreferences" required="required">
+                        <option value="" disabled selected>Please choose an option</option>
+                        <option value="none">None</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="vegan">Vegan</option>
+                        <option value="halal">Halal</option>
+                        <option value="glutenFree">Gluten-Free</option>
+                        <option value="dairyFree">Dairy-Free</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="country">Country/Region *</label><br>
+                    <select id="country" name="country" required="required">
+                        <option value="" disabled selected>Please choose an option</option>
+                        <option value="australia">Australia</option>
+                        <option value="newZealand">New Zealand</option>
+                        <option value="unitedStates">United States</option>
+                        <option value="canada">Canada</option>
+                        <option value="unitedKingdom">United Kingdom</option>
+                        <option value="china">China</option>
+                        <option value="india">India</option>
+                        <option value="japan">Japan</option>
+                        <option value="singapore">Singapore</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+
+                <p>
+                    <input type="submit" value="Begin Adventure">
+                </p>
+            </form>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="site-footer">
+        <small class="copyright">&copy; 2026 PixelPlate</small>
+        <span class="credit">A web development project for Swinburne University of Technology.</span>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

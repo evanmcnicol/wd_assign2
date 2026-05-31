@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PixelPlate. Discover and reserve game-themed restaurants.">
+    <meta name="author" content="Evan McNicol">
+    <title>PixelPlate — Where Gaming Meets Dining</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="site-header">
+        <a href="index.html" class="logo"><span class="site-name">PixelPlate</span></a>
+        <button class="menu-toggle" type="button">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="site-nav" id="primary-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="recommend.html">Recommendations</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li class="mobile-only"><a href="reservation.html" class="active">Reservation</a></li>
+            </ul>
+        </nav>
+        <a href="reservation.html" class="btn btn-primary active">Reservation</a>
+    </header>
+    <!-- main form content -->
+    <main class="form-page">
+        <section>
+            <h1>Reserve your restaurant</h1>
+            <form action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php" method="post" novalidate>
+                <p>
+                    <label for="fullName">Full Name *</label><br>
+                    <input type="text" id="fullName" name="fullName" placeholder="Cloud Strife" required="required">
+                </p>
+
+                <p>
+                    <label for="email">Email Address *</label><br>
+                    <input type="email" id="email" name="email" placeholder="link@hyrulemail.com" required="required">
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number *</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="0413091985" required="required">
+                </p>
+
+                <p>
+                    <label for="restaurant">Select Restaurant *</label><br>
+                    <select id="restaurant" name="restaurant" required="required">
+                        <option value="" disabled selected>Please choose an option</option>
+                        <option value="peach">Princess Peach's Castle Catering</option>
+                        <option value="koopa">Koopa's BBQ</option>
+                        <option value="lonlon">Lon Lon Ranch House</option>
+                        <option value="zora">Zora's Kitchen</option>
+                        <option value="seventh">Seventh Heaven Bar</option>
+                        <option value="midgar">Midgar Grill</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="reservationDate">Reservation Date *</label><br>
+                    <input type="date" id="reservationDate" name="reservationDate" required="required">
+                </p>
+
+                <p>
+                    <label for="reservationTime">Reservation Time *</label><br>
+                    <input type="time" id="reservationTime" name="reservationTime" required="required">
+                </p>
+
+                <p>
+                    <label for="guests">Number of People *</label><br>
+                    <input type="number" id="guests" name="guests" min="1" max="8" placeholder="1-8 party members"
+                        required="required">
+                </p>
+
+                <p>
+                    <label for="requests">Special Requests</label><br>
+                    <textarea id="requests" name="requests"
+                        placeholder="e.g. extra mushrooms, no Goomba chefs..."></textarea>
+                </p>
+
+                <p>
+                    <label for="deposit">Deposit Amount (auto-filled)</label><br>
+                    <input type="text" id="deposit" name="deposit" placeholder="Auto-calculated quest fee" readonly>
+                </p>
+
+                <p>
+                    <label for="paymentMethod">Deposit Method *</label><br>
+                    <select id="paymentMethod" name="paymentMethod" required="required">
+                        <option value="" disabled selected>Please choose an option</option>
+                        <option>Voucher</option>
+                        <option>Online Payment</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="voucherCode">Voucher Code *</label><br>
+                    <input type="text" id="voucherCode" name="voucherCode" placeholder="0131-1997-TIFA"
+                        required="required">
+                </p>
+
+                <p>
+                    <label for="cardNumber">Card Number *</label><br>
+                    <input type="text" id="cardNumber" name="cardNumber"
+                        placeholder="Enter your Triforce payment card..." required="required">
+                </p>
+
+                <p>
+                    <label for="billingEmail">Billing Email</label><br>
+                    <input type="email" id="billingEmail" name="billingEmail"
+                        placeholder="Enter your Bank Toad email...">
+                    <label class="checkbox-option" for="sameEmail">
+                        <input type="checkbox" id="sameEmail" name="sameEmail">
+                        <span>Same as email address</span>
+                    </label>
+                </p>
+
+                <p>
+                    <input type="submit" value="Submit Reservation">
+                </p>
+            </form>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="site-footer">
+        <small class="copyright">&copy; 2026 PixelPlate</small>
+        <span class="credit">A web development project for Swinburne University of Technology.</span>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

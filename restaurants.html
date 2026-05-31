@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PixelPlate. Discover and reserve game-themed restaurants.">
+    <meta name="author" content="Evan McNicol">
+    <title>PixelPlate — Where Gaming Meets Dining</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="site-header">
+        <a href="index.html" class="logo"><span class="site-name">PixelPlate</span></a>
+        <button class="menu-toggle" type="button">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="site-nav" id="primary-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="restaurants.html" class="active">Restaurants</a></li>
+                <li><a href="recommend.html">Recommendations</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li class="mobile-only"><a href="reservation.html">Reservation</a></li>
+            </ul>
+        </nav>
+        <a href="reservation.html" class="btn btn-primary">Reservation</a>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- big restaurant cards -->
+        <section class="restaurants">
+            <div class="restaurants-head">
+                <div>
+                    <h1>Restaurants</h1>
+                    <p class="lead">Here you can find amazing restaurants we have on offer!</p>
+                </div>
+            </div>
+            <div class="restaurant-grid">
+                <article class="restaurant-card">
+                    <div class="card-image">
+                        <img src="images/restaurants/peachs-castle.png"
+                            alt="Interior image of Princess Peach's Castle Catering">
+                    </div>
+                    <div class="card-body">
+                        <h3>Princess Peach's Castle Catering</h3>
+                        <p class="card-meta">Royal European &middot; $75-$110 per person &middot; Fine Dining</p>
+                        <p>Princess Peach's Castle Catering offers a polished royal dining experience for guests who
+                            want a memorable date night or special celebration. The menu focuses on elegant European
+                            dishes, colourful presentation, and gentle Mushroom Kingdom theming without making the meal
+                            feel childish. It is best suited to diners with a higher budget.</p>
+                        <ul class="dish-list">
+                            <li>Royal Mushroom Risotto - $34</li>
+                            <li>Castle Garden Ravioli - $31</li>
+                            <li>Peach Crown Tart - $16</li>
+                        </ul>
+                        <p class="deposit">Reservation deposit: $25 per person</p>
+                        <div class="card-foot">
+                            <a href="reservation.html?restaurant=peach" class="btn btn-ghost">Reserve &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="restaurant-card">
+                    <div class="card-image">
+                        <img src="images/restaurants/lonlon.png"
+                            alt="Interior image of Lon Lon House">
+                    </div>
+                    <div class="card-body">
+                        <h3>Lon Lon Ranch House</h3>
+                        <p class="card-meta">Country comfort food &middot; $35-$55 per person &middot; Family Friendly
+                        </p>
+                        <p>Lon Lon Ranch House is a relaxed ranch-style restaurant built for families, travellers, and
+                            casual groups. The food is warm, hearty, and simple, with farm-inspired meals that suit
+                            guests who want generous portions without a formal atmosphere. It is a strong choice for
+                            medium-budget bookings and vegetarian-friendly meals.</p>
+                        <ul class="dish-list">
+                            <li>Slow-Cooked Ranch Roast - $32</li>
+                            <li>Lon Lon Milk Bread Basket - $12</li>
+                            <li>Hyrule Pumpkin Soup - $16</li>
+                        </ul>
+                        <p class="deposit">Reservation deposit: $15 per person</p>
+                        <div class="card-foot">
+                            <a href="reservation.html?restaurant=lonlon" class="btn btn-ghost">Reserve &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="restaurant-card">
+                    <div class="card-image">
+                        <img src="images/restaurants/seventh-heaven.png"
+                            alt="Interior image of Seventh heaven Bar">
+                    </div>
+                    <div class="card-body">
+                        <h3>Seventh Heaven Bar</h3>
+                        <p class="card-meta">Cocktail lounge &middot; $60-$95 per person &middot; Rooftop Lounge</p>
+                        <p>Seventh Heaven Bar is a neon-lit lounge designed for dates, friends, and late-night dining.
+                            It mixes smoky bar food with polished fusion plates, giving guests a relaxed but dramatic
+                            Midgar atmosphere. The menu suits diners who want something more grown-up than a family meal
+                            but less formal than fine dining.</p>
+                        <ul class="dish-list">
+                            <li>Sector 7 Smoked Sliders - $24</li>
+                            <li>Tifa's Cosmo Canyon - $22</li>
+                            <li>Mako Lime Cheesecake - $15</li>
+                        </ul>
+                        <p class="deposit">Reservation deposit: $20 per person</p>
+                        <div class="card-foot">
+                            <a href="reservation.html?restaurant=seventh" class="btn btn-ghost">Reserve &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="restaurant-card">
+                    <div class="card-image">
+                        <img src="images/restaurants/koopas-bbq.png"
+                        alt="Interior image of Koopa's BBQ">
+                    </div>
+                    <div class="card-body">
+                        <h3>Koopa's BBQ</h3>
+                        <p class="card-meta">Smoked BBQ &middot; $40-$65 per person &middot; Group Dining</p>
+                        <p>Koopa's BBQ is a loud, fiery grillhouse made for groups who want bold flavours and shareable
+                            meals. The menu focuses on smoked meats, flame-grilled vegetables, spicy sauces, and
+                            platter-style service. It is a practical medium-budget option for guests who want energy,
+                            large portions, and a less formal dining experience.</p>
+                        <ul class="dish-list">
+                            <li>Bowser Flame Rib Platter - $38</li>
+                            <li>Koopa Charred Corn Skewers - $14</li>
+                            <li>Molten Chilli Wings - $22</li>
+                        </ul>
+                        <p class="deposit">Reservation deposit: $15 per person</p>
+                        <div class="card-foot">
+                            <a href="reservation.html?restaurant=koopa" class="btn btn-ghost">Reserve &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="restaurant-card">
+                    <div class="card-image">
+                        <img src="images/restaurants/zora-kitchen.png"
+                            alt="Interior image of Zora Kitchen">
+                    </div>
+                    <div class="card-body">
+                        <h3>Zora's Kitchen</h3>
+                        <p class="card-meta">Seafood fusion &middot; $70-$105 per person &middot; Elegant Atmosphere</p>
+                        <p>Zora's Kitchen is an elegant seafood restaurant inspired by Lanayru's calm waters and Zora
+                            architecture. It is best suited to business meals, formal dates, and guests who prefer
+                            lighter dishes with refined presentation. The seafood-focused menu makes it easier to offer
+                            halal and gluten-free friendly choices than heavier grill restaurants.</p>
+                        <ul class="dish-list">
+                            <li>Lanayru Coral Trout - $42</li>
+                            <li>Zora Pearl Seafood Risotto - $36</li>
+                            <li>Water Temple Citrus Salad - $18</li>
+                        </ul>
+                        <p class="deposit">Reservation deposit: $25 per person</p>
+                        <div class="card-foot">
+                            <a href="reservation.html?restaurant=zora" class="btn btn-ghost">Reserve &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="restaurant-card">
+                    <div class="card-image">
+                        <img src="images/restaurants/midgar-grill.png"
+                            alt="Interior image of Midgar Grill">
+                    </div>
+                    <div class="card-body">
+                        <h3>Midgar Grill</h3>
+                        <p class="card-meta">Modern grill &middot; $55-$85 per person &middot; Urban Dining</p>
+                        <p>Midgar Grill is an industrial city restaurant for business meals, groups, and guests who want
+                            a modern dining setting. The menu combines grilled dishes, street-food influences, and
+                            sharp presentation. It works well as a medium-to-high budget option when diners want a
+                            serious atmosphere without choosing a full fine-dining venue.</p>
+                        <ul class="dish-list">
+                            <li>Plate-Side Beef Skewers - $35</li>
+                            <li>Mako Pepper Chicken - $29</li>
+                            <li>Shinra Street Fries - $13</li>
+                        </ul>
+                        <p class="deposit">Reservation deposit: $20 per person</p>
+                        <div class="card-foot">
+                            <a href="reservation.html?restaurant=midgar" class="btn btn-ghost">Reserve &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="site-footer">
+        <small class="copyright">&copy; 2026 PixelPlate</small>
+        <span class="credit">A web development project for Swinburne University of Technology.</span>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
