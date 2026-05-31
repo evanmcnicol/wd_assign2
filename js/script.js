@@ -319,20 +319,24 @@ function setupReservationForm() {
     cardNumber,
   );
 
+  // recalculate the deposit amount live when the number of guests changes
   guests.addEventListener("input", function () {
     updateDeposit(guests, deposit);
   });
 
+  // updates the fields when the selected payment method changes
   paymentMethod.addEventListener("change", function () {
+    // clear old payment errors as the fields have changed
     clearError(voucherCode);
     clearError(cardNumber);
     updatePaymentFields(
-      paymentMethod,
-      voucherRow,
-      cardRow,
-      voucherCode,
-      cardNumber,
+      paymentMethod,  // selected payment option
+      voucherRow,     // area containing voucher input
+      cardRow,        // area containing card input
+      voucherCode,    // voucher code input
+      cardNumber,     // card number input field
     );
+    // shows the correct payment fields for the selected payment option
   });
 
   // sets the billing email to be the value entered in the email field
