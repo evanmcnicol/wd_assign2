@@ -1,5 +1,5 @@
 COS10005 Assignment 2
-Student Name: Evan McNicol
+Name: Evan McNicol
 Student ID: 105923144
 
 =================================
@@ -7,7 +7,7 @@ Student ID: 105923144
 =================================
 
 index.html
-- Home page introducing PixelPlater and featured restaurants.
+- Home page introducing PixelPlate and featured restaurants.
 
 restaurants.html
 - Displays the six restaurants with descriptions, pricing, dishes and images.
@@ -45,7 +45,7 @@ Reservation Form:
 - Number of guests must be greater than 0.
 - Voucher payment displays a voucher code field and hides the credit card field.
 - Online payment displays a credit card field and hides the voucher code field.
-- Credit card numbers are checked for correct lengths
+- Credit card numbers are checked for correct lengths.
     - Via/Mastercard: 16 digits
     - Amex: 15 digits
 
@@ -54,11 +54,11 @@ Reservation Form:
 =================================
 
 Images:
-- hero1.png [https://www.ign.com/wikis/super-mario-odyssey/Mushroom_Kingdom]
-- hero2.png [https://www.reddit.com/r/tearsofthekingdom/comments/1pkw0z2/this_game_is_absolutely_breathtaking]
-- hero3.png [https://finalfantasy.fandom.com/wiki/Sector_7]
+- hero1.png - https://www.ign.com/wikis/super-mario-odyssey/Mushroom_Kingdom
+- hero2.png - https://www.reddit.com/r/tearsofthekingdom/comments/1pkw0z2/this_game_is_absolutely_breathtaking
+- hero3.png - https://finalfantasy.fandom.com/wiki/Sector_7
 
-Fonts:
+Fonts/Icons:
 - Google Fonts - Manrope [https://fonts.google.com]
 
 =================================
